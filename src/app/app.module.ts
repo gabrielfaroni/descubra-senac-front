@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatStepperModule} from '@angular/material/stepper';
-import {FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,10 +24,7 @@ import { MenuComponent } from './components/menu/menu.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatStepperModule,
-    FormBuilder,
-    FormGroup,
-    ReactiveFormsModule,
-    MatFormFieldModule
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
