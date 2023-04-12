@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-teste',
@@ -21,7 +22,7 @@ export class TesteComponent {
 
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
 
   acaoSim(questao: number): void {
@@ -37,10 +38,11 @@ export class TesteComponent {
 
         break;
       case 3:
-        // informatica basica
+        this.router.navigateByUrl(`cursos`)
+      // informatica basica
         break;
       case 4:
-        // Power BI
+        this.router.navigateByUrl(`cursos`)
         break;
       case 5:
         this.questao7 = true
@@ -83,7 +85,6 @@ export class TesteComponent {
 
       case 2:
         this.questao3 = true
-
         break;
       case 3:
         this.questao5 = true
