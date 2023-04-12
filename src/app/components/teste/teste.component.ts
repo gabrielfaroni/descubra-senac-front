@@ -34,13 +34,13 @@ export class TesteComponent {
 
       case 2:
         this.questao4 = true
-        this.questao3 = false
+
         break;
       case 3:
         // informatica basica
         break;
       case 4:
-        // Excel avançado, Excel básico, BI
+        // Power BI
         break;
       case 5:
         this.questao7 = true
@@ -52,7 +52,7 @@ export class TesteComponent {
         this.questao10 = true
         break;
       case 8:
-        // Excel avançado, Excel básico, BI
+        // Power BI
         break;
       case 9:
         //Programador Web (lógica de programação)
@@ -60,35 +60,17 @@ export class TesteComponent {
       case 10:
         //Programador Web (lógica de programação)
         break;
-        case 11:
-          this.questao8 = true
-          break;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      case 11:
+        // Excel básico e avançado
+        
+        break;
 
       default:
         break;
 
-
-
-
-
     }
 
-    this.questao2 = true;
+
   }
 
   acaoNao(questao: number): void {
@@ -101,14 +83,15 @@ export class TesteComponent {
 
       case 2:
         this.questao3 = true
-        this.questao4 = false
+
         break;
       case 3:
         this.questao5 = true
+
         break;
       case 4:
         this.questao3 = true
-        this.questao4 = false
+
         break;
       case 5:
         this.questao6 = true
@@ -118,9 +101,11 @@ export class TesteComponent {
         break;
       case 7:
         this.questao6 = true
+
         break;
       case 8:
         this.questao9 = true
+        
         break;
       case 9:
         // Excel avançado, Excel básico, BI
@@ -128,17 +113,13 @@ export class TesteComponent {
       case 10:
         // Excel avançado, Excel básico, BI
         break;
-        case 11:
-          this.questao9 = true
-          break;
+      case 11:
+        
 
-
-
-
-
-
-
-
+      // AutoCAD2D
+        
+        
+        break;
 
       default:
         break;
@@ -147,19 +128,5 @@ export class TesteComponent {
     }
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
