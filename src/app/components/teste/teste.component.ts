@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router';    // aqui usamos navigate e ai importamos aqui em cima. também tem que estar em app.module..
 
 @Component({
   selector: 'app-teste',
@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 
 
-export class TesteComponent {
+export class TesteComponent {                 // exports serviu aqui para dizer que posso chamar em outro lugar, estou chamando em app.module.ts esse app onde eu digo para o angular
+                                              // oq eu tenho que importar, declarar.
   questao2: Boolean = false;
   questao3: Boolean = false;
   questao4: Boolean = false;
@@ -25,9 +26,10 @@ export class TesteComponent {
   constructor(private router: Router) { }
 
 
-  acaoSim(questao: number): void {
+  acaoSim(gabriel: number): void {                        // void serve para quando nao tem retorno
+                                                          // Gabriel é o parametro do tipo number que cada case vai receber. 1,2,3,4,5 etc.
 
-    switch (questao) {
+    switch (gabriel) {
 
       case 1:
         this.questao2 = true
@@ -39,7 +41,7 @@ export class TesteComponent {
         break;
       case 3:
         this.router.navigateByUrl(`cursos`)
-      // informatica basica
+        // informatica basica
         break;
       case 4:
         this.router.navigateByUrl(`cursos`)
@@ -64,7 +66,7 @@ export class TesteComponent {
         break;
       case 11:
         // Excel básico e avançado
-        
+
         break;
 
       default:
@@ -106,7 +108,7 @@ export class TesteComponent {
         break;
       case 8:
         this.questao9 = true
-        
+
         break;
       case 9:
         // Excel avançado, Excel básico, BI
@@ -115,11 +117,11 @@ export class TesteComponent {
         // Excel avançado, Excel básico, BI
         break;
       case 11:
-        
 
-      // AutoCAD2D
-        
-        
+
+        // AutoCAD2D
+
+
         break;
 
       default:
