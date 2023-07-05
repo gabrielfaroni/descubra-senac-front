@@ -1,3 +1,5 @@
+<!-- acao sim(1) é nosso case 1, questao2 é nosso questao2 com boolean, mat-step é do material angular que é colocado em app.module pra poder usar.  -->
+
 <mat-stepper orientation="vertical">
   <mat-step>
     <ng-template matStepLabel>Pergunta</ng-template>
@@ -5,13 +7,15 @@
       <h4>Você tem disponibilidade para realizar um curso de longa duração?
       </h4>
       <div class="form-check">
-        <input (click)="acaoSim(1)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <input (click)="acaoSim(1)" class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault1">
         <label class="form-check-label" for="flexRadioDefault1">
           Sim
         </label>
       </div>
       <div class="form-check">
-        <input (click)="acaoNao(1)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <input (click)="acaoNao(1)" class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault2">
         <label class="form-check-label" for="flexRadioDefault2">
           Não
         </label>
@@ -26,13 +30,15 @@
 
       </h4>
       <div class="form-check">
-        <input (click)="acaoSim(2)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <input (click)="acaoSim(2)" class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault1">
         <label class="form-check-label" for="flexRadioDefault1">
           Sim
         </label>
       </div>
       <div class="form-check">
-        <input (click)="acaoNao(2)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+        <input (click)="acaoNao(2)" class="form-check-input" type="radio" name="flexRadioDefault"
+          id="flexRadioDefault2">
         <label class="form-check-label" for="flexRadioDefault2">
           Não
         </label>
@@ -54,7 +60,7 @@
       </label>
     </div>
     <div class="form-check">
-      <input (click)="acaoNao(3)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+      <input (click)="acaoNao(3)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
       <label class="form-check-label" for="flexRadioDefault2">
         Não
       </label>
@@ -75,7 +81,7 @@
       </label>
     </div>
     <div class="form-check">
-      <input (click)="acaoNao(4)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+      <input (click)="acaoNao(4)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
       <label class="form-check-label" for="flexRadioDefault2">
         Não
       </label>
@@ -96,7 +102,7 @@
       </label>
     </div>
     <div class="form-check">
-      <input (click)="acaoNao(5)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+      <input (click)="acaoNao(5)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
       <label class="form-check-label" for="flexRadioDefault2">
         Não
       </label>
@@ -106,7 +112,7 @@
   </mat-step>
 
   <mat-step *ngIf="questao6">
-    <ng-template matStepLabel>Pergunta 6</ng-template>
+    <ng-template matStepLabel>Pergunta </ng-template>
     <h4>Você busca criar e editar vídeos para redes sociais?
 
     </h4>
@@ -117,7 +123,7 @@
       </label>
     </div>
     <div class="form-check">
-      <input (click)="acaoNao(6)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+      <input (click)="acaoNao(6)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
       <label class="form-check-label" for="flexRadioDefault2">
         Não
       </label>
@@ -127,7 +133,7 @@
   </mat-step>
 
   <mat-step *ngIf="questao7">
-    <ng-template matStepLabel>Pergunta 7</ng-template>
+    <ng-template matStepLabel>Pergunta </ng-template>
     <h4>Profissionalmente, você considera raciocínio e lógica importante?
 
     </h4>
@@ -138,14 +144,14 @@
       </label>
     </div>
     <div class="form-check">
-      <input (click)="acaoNao(7)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+      <input (click)="acaoNao(7)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
       <label class="form-check-label" for="flexRadioDefault2">
         Não
       </label>
     </div>
     <button mat-button matStepperPrevious>Anterior</button>
-    <button mat-button matStepperNext>Próxima</button>  
-   
+    <button mat-button matStepperNext>Próxima</button>
+
   </mat-step>
 
   <mat-step *ngIf="questao8">
@@ -160,7 +166,7 @@
       </label>
     </div>
     <div class="form-check">
-      <input (click)="acaoNao(8)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+      <input (click)="acaoNao(8)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
       <label class="form-check-label" for="flexRadioDefault2">
         Não
       </label>
@@ -170,7 +176,7 @@
   </mat-step>
 
   <mat-step *ngIf="questao9">
-    <ng-template matStepLabel>Pergunta 9</ng-template>
+    <ng-template matStepLabel>Pergunta </ng-template>
     <h4>Você imagina se destacar profissionalmente desenvolvendo algoritmos estruturados em lógica de programação?
 
     </h4>
@@ -181,7 +187,7 @@
       </label>
     </div>
     <div class="form-check">
-      <input (click)="acaoNao(9)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+      <input (click)="acaoNao(9)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
       <label class="form-check-label" for="flexRadioDefault2">
         Não
       </label>
@@ -202,7 +208,7 @@
       </label>
     </div>
     <div class="form-check">
-      <input (click)="acaoNao(10)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+      <input (click)="acaoNao(10)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
       <label class="form-check-label" for="flexRadioDefault2">
         Não
       </label>
@@ -213,7 +219,7 @@
 
   <mat-step *ngIf="questao11">
     <ng-template matStepLabel>Pergunta</ng-template>
-    <h4>Você imagina se destacar profissionalmente desenvolvendo sites, sistemas e aplicações?
+    <h4>Você imagina se destacar profissionalmente realizando análise de dados?
 
     </h4>
     <div class="form-check">
@@ -223,12 +229,13 @@
       </label>
     </div>
     <div class="form-check">
-      <input (click)="acaoNao(11)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+      <input (click)="acaoNao(11)" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
       <label class="form-check-label" for="flexRadioDefault2">
         Não
       </label>
     </div>
     <button mat-button matStepperPrevious>Anterior</button>
-  </mat-step> 
+    <button mat-button matStepperNext>Próxima</button>
+  </mat-step>
 
 </mat-stepper>

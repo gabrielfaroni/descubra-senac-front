@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';    // aqui usamos navigate e ai importamos aqui em cima. também tem que estar em app.module..
 
 @Component({
   selector: 'app-teste',
@@ -7,7 +8,8 @@ import { Component } from '@angular/core';
 })
 
 
-export class TesteComponent {
+export class TesteComponent {                 // exports serviu aqui para dizer que posso chamar em outro lugar, estou chamando em app.module.ts esse app onde eu digo para o angular
+                                              // oq eu tenho que importar, declarar.
   questao2: Boolean = false;
   questao3: Boolean = false;
   questao4: Boolean = false;
@@ -21,12 +23,13 @@ export class TesteComponent {
 
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
 
-  acaoSim(questao: number): void {
+  acaoSim(gabriel: number): void {                        // void serve para quando nao tem retorno
+                                                          // Gabriel é o parametro do tipo number que cada case vai receber. 1,2,3,4,5 etc.
 
-    switch (questao) {
+    switch (gabriel) {
 
       case 1:
         this.questao2 = true
@@ -34,13 +37,14 @@ export class TesteComponent {
 
       case 2:
         this.questao4 = true
-        this.questao3 = false
+
         break;
       case 3:
+        this.router.navigateByUrl(`cursos`)
         // informatica basica
         break;
       case 4:
-        // Excel avançado, Excel básico, BI
+        this.router.navigateByUrl(`cursos`)
         break;
       case 5:
         this.questao7 = true
@@ -52,7 +56,7 @@ export class TesteComponent {
         this.questao10 = true
         break;
       case 8:
-        // Excel avançado, Excel básico, BI
+        // Power BI
         break;
       case 9:
         //Programador Web (lógica de programação)
@@ -60,35 +64,17 @@ export class TesteComponent {
       case 10:
         //Programador Web (lógica de programação)
         break;
-        case 11:
-          this.questao8 = true
-          break;
+      case 11:
+        // Excel básico e avançado
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        break;
 
       default:
         break;
 
-
-
-
-
     }
 
-    this.questao2 = true;
+
   }
 
   acaoNao(questao: number): void {
@@ -101,14 +87,14 @@ export class TesteComponent {
 
       case 2:
         this.questao3 = true
-        this.questao4 = false
         break;
       case 3:
         this.questao5 = true
+
         break;
       case 4:
         this.questao3 = true
-        this.questao4 = false
+
         break;
       case 5:
         this.questao6 = true
@@ -118,9 +104,11 @@ export class TesteComponent {
         break;
       case 7:
         this.questao6 = true
+
         break;
       case 8:
         this.questao9 = true
+
         break;
       case 9:
         // Excel avançado, Excel básico, BI
@@ -128,17 +116,13 @@ export class TesteComponent {
       case 10:
         // Excel avançado, Excel básico, BI
         break;
-        case 11:
-          this.questao9 = true
-          break;
+      case 11:
 
 
+        // AutoCAD2D
 
 
-
-
-
-
+        break;
 
       default:
         break;
@@ -147,19 +131,5 @@ export class TesteComponent {
     }
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
